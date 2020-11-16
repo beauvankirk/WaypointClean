@@ -1,39 +1,121 @@
+version 5.255.0
 source https://api.nuget.org/v3/index.json
 
+framework: netcoreapp3.1, netcoreapp3.0, netstandard2.0, netstandard2.1
 storage: none
-framework: netcoreapp3.1, netstandard2.0, netstandard2.1
+generate_load_scripts: true
 
-nuget FSharp.Core
-nuget Expecto
-nuget FsCheck 2.14.0
-nuget Expecto.FsCheck
+nuget FSharp.Core ~> 4.7.2
+
+group Test
+    source https://api.nuget.org/v3/index.json
+
+    framework: netcoreapp3.1, netcoreapp3.0, netstandard2.0, netstandard2.1
+    storage: none
+    generate_load_scripts: false
+
+    nuget FSharp.Core ~> 4.7.2
+    nuget Expecto ~> 9.0.2
+    nuget Expecto.FsCheck ~> 9.0.2
+    nuget FsCheck ~> 2.14.3
+
 
 group Docs
-  source https://api.nuget.org/v3/index.json
+    source https://api.nuget.org/v3/index.json
 
-  framework: netstandard2.0
-  storage: symlink
+    framework: netstandard2.0
 
-  nuget FSharp.Compiler.Service ~> 35.0
-  nuget FSharp.Formatting ~> 4.1
-  nuget Newtonsoft.Json
+    storage: none
+    generate_load_scripts: true
+    
+    nuget FSharp.Core < 5.0
+    nuget FSharp.Compiler.Service < 38.0
+    nuget FSharp.Formatting 4.1
+    nuget Newtonsoft.Json
+    nuget Microsoft.NETCore.Platforms < 5.0
+    nuget Microsoft.NETCore.Targets < 5.0
+    nuget System.Resources.Extensions < 5.0
+    nuget System.Security.Cryptography.Xml < 5.0
+    nuget System.Security.Cryptography.OpenSsl < 5.0
+    nuget System.Security.Cryptography.ProtectedData < 5.0
+    nuget System.Security.Permissions < 5.0
+    nuget System.Security.AccessControl < 5.0
+    nuget System.Security.Principal.Windows < 5.0
+    nuget System.Threading.Tasks.Dataflow < 5.0
+    nuget System.Reactive < 5.0
+    nuget System.Reflection.Metadata < 5.0
+    nuget Microsoft.Win32.Registry < 5.0
+    nuget Microsoft.Win32.SystemEvents < 5.0
+    nuget System.Collections.Immutable < 5.0
+    nuget System.Drawing.Common < 5.0
+    nuget System.Diagnostics.DiagnosticSource < 5.0
+    nuget System.IO.Pipelines < 5.0
+    nuget System.Text.Json < 5.0
+    nuget System.Text.Encodings.Web < 5.0
+    nuget System.Text.Encoding.CodePages < 5.0
+    nuget System.Runtime.CompilerServices.Unsafe < 5.0
+    nuget System.CodeDom < 5.0
+    nuget Microsoft.Bcl.AsyncInterfaces < 5.0
+    nuget System.Net.Http.WinHttpHandler < 5.0.0
+
+    nuget Nuget.Packaging
+    nuget Nuget.Protocol
+    nuget Nuget.Common 
+    nuget Nuget.Frameworks
+    nuget Nuget.Versioning
+    nuget Nuget.CommandLine
+    nuget Nuget.Configuration
+    nuget System.Formats.Asn1  
+
 
 // [ FAKE GROUP ]
 group Build
-  source https://api.nuget.org/v3/index.json
+    source https://api.nuget.org/v3/index.json
 
-  framework: netstandard2.0
-  storage: none
+    framework: netstandard2.0
+    storage: none
 
-  nuget Fake.Core.Target
-  nuget Fake.Core.Process
-  nuget Fake.DotNet.Cli
-  nuget Fake.Core.ReleaseNotes
-  nuget Fake.DotNet.AssemblyInfoFile
-  nuget Fake.DotNet.Paket
-  nuget Fake.Tools.Git
-  nuget Fake.Core.Environment
-  nuget Fake.Core.UserInput
-  nuget Fake.IO.FileSystem
-  nuget Fake.DotNet.MsBuild
-  nuget Fake.Api.GitHub
+    nuget FSharp.Core < 5.0
+    nuget Paket.Core 5.255.0
+    nuget Fake.Core.Target
+    nuget Fake.Core.Process
+    nuget Fake.Core.ReleaseNotes 
+    nuget Fake.Core.UserInput
+    nuget Fake.IO.FileSystem
+    nuget Fake.DotNet.Cli
+    nuget Fake.DotNet.MSBuild
+    nuget Fake.DotNet.Paket
+    nuget Fake.DotNet.NuGet 
+    nuget Fake.Api.GitHub
+    nuget Fake.Tools.Git
+    nuget Microsoft.Win32.Registry < 5.0
+    nuget System.Buffers < 5.0
+    nuget System.Memory < 5.0
+    nuget System.Security.AccessControl < 5.0
+    nuget System.Security.Principal.Windows < 5.0
+    nuget System.Reactive < 5.0
+    // nuget Nuget.Packaging < 5.8 framework: netstandard2.0
+    // nuget Nuget.Protocol < 5.8 framework: netstandard2.0
+    // nuget Nuget.Common < 5.8 framework: netstandard2.0
+    // nuget Nuget.Frameworks < 5.8 framework: netstandard2.0
+    // nuget Nuget.Versioning < 5.8 framework: netstandard2.0
+    // nuget Nuget.CommandLine < 5.8 framework: netstandard2.0
+    // nuget Nuget.Configuration < 5.8 framework: netstandard2.0
+    nuget Nuget.Packaging
+    nuget Nuget.Protocol
+    nuget Nuget.Common 
+    nuget Nuget.Frameworks
+    nuget Nuget.Versioning
+    nuget Nuget.CommandLine
+    nuget Nuget.Configuration
+    nuget System.Security.Cryptography.Pkcs 5.0.0
+    nuget System.Security.Cryptography.Cng 5.0.0
+    nuget System.Formats.Asn1  
+    nuget System.Net.Http.WinHttpHandler < 5.0.0
+    nuget System.CodeDom < 5.0.0
+    nuget System.Collections.Immutable < 5.0.0
+    nuget System.Resources.Extensions < 5.0.0
+    nuget System.Runtime.CompilerServices.Unsafe < 5.0.0
+    nuget System.Threading.Tasks.Dataflow < 5.0.0
+    nuget System.Security.Cryptography.ProtectedData < 5.0.0
+

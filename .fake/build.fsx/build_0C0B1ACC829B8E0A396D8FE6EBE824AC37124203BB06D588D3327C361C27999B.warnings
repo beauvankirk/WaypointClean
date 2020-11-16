@@ -1,0 +1,3 @@
+C:\Users\beauv\fs\tmp\WaypointClean\build.fsx (236,44)-(236,51): FSharpErrorSeverity.Error FS0039: The value, constructor, namespace or type 'Combine' is not defined. Maybe you want one of the following:
+   combine
+   combineTrimEnd

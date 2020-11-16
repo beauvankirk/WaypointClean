@@ -1,7 +1,9 @@
+
 #r "_lib/Fornax.Core.dll"
 
-open Config
 
+open Config
+open System.IO
 let customRename (page: string) =
     System.IO.Path.ChangeExtension(page.Replace ("content/", ""), ".html")
 

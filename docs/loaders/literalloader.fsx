@@ -1,8 +1,8 @@
 open System
+
 #r "../_lib/Fornax.Core.dll"
-#r "../../packages/docs/FSharp.Formatting/lib/netstandard2.0/FSharp.CodeFormat.dll"
-#r "../../packages/docs/FSharp.Formatting/lib/netstandard2.0/FSharp.Markdown.dll"
-#r "../../packages/docs/FSharp.Formatting/lib/netstandard2.0/FSharp.Literate.dll"
+#load "../../.paket/load/netcoreapp3.1/Docs/docs.group.fsx"
+
 #if !FORNAX
 #load "contentloader.fsx"
 open Contentloader

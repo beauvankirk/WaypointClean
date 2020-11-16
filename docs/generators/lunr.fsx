@@ -1,6 +1,6 @@
 #r "../_lib/Fornax.Core.dll"
-#r "../../packages/docs/Newtonsoft.Json/lib/netstandard2.0/Newtonsoft.Json.dll"
-#r "../../packages/docs/FSharp.Formatting/lib/netstandard2.0/FSharp.MetadataFormat.dll"
+#load "../../.paket/load/netcoreapp3.1/Docs/docs.group.fsx"
+
 #if !FORNAX
 #load "../loaders/contentloader.fsx"
 #load "../loaders/apirefloader.fsx"

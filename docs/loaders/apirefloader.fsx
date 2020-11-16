@@ -1,5 +1,5 @@
 #r "../_lib/Fornax.Core.dll"
-#r "../../packages/docs/FSharp.Formatting/lib/netstandard2.0/FSharp.MetadataFormat.dll"
+#load "../../.paket/load/netcoreapp3.1/Docs/docs.group.fsx"
 
 open System
 open System.IO
@@ -31,11 +31,12 @@ let loader (projectRoot: string) (siteContet: SiteContents) =
     try
       let dlls =
         [
-          "WaypointClean", Path.Combine(projectRoot, "..", "build", "WaypointClean.dll")
+          // "WaypointClean", Path.Combine(projectRoot, "..", "build", "WaypointClean.dll")
+          "WaypointClean", Path.Combine(projectRoot, "..", "build", "netstandard2.0", "WaypointClean.dll")
         ]
       let libs =
         [
-          Path.Combine (projectRoot, "..", "build")
+          Path.Combine (projectRoot, "..", "build", "netstandard2.0")
         ]
       for (label, dll) in dlls do
         let output = MetadataFormat.Generate(dll, markDownComments = true, publicOnly = true, libDirs = libs)

@@ -1,0 +1,2 @@
+C:\Users\beauv\fs\tmp\WaypointClean\build.fsx (240,23)-(240,24): FSharpErrorSeverity.Warning FS0058: Possible incorrect indentation: this token is offside of context started at position (236:34). Try indenting this token further or using standard formatting conventions.
+C:\Users\beauv\fs\tmp\WaypointClean\build.fsx (244,16)-(244,17): FSharpErrorSeverity.Error FS0010: Incomplete structured construct at or before this point in expression

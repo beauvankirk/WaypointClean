@@ -1,0 +1,10 @@
+C:\Users\beauv\fs\tmp\WaypointClean\src\WaypointClean\bin\Debug\netstandard2.0\WaypointClean.deps.json
+C:\Users\beauv\fs\tmp\WaypointClean\src\WaypointClean\bin\Debug\netstandard2.0\WaypointClean.dll
+C:\Users\beauv\fs\tmp\WaypointClean\src\WaypointClean\bin\Debug\netstandard2.0\WaypointClean.pdb
+C:\Users\beauv\fs\tmp\WaypointClean\src\WaypointClean\bin\Debug\netstandard2.0\WaypointClean.xml
+C:\Users\beauv\fs\tmp\WaypointClean\src\WaypointClean\obj\Debug\netstandard2.0\WaypointClean.fsprojAssemblyReference.cache
+C:\Users\beauv\fs\tmp\WaypointClean\src\WaypointClean\obj\Debug\netstandard2.0\WaypointClean.AssemblyInfoInputs.cache
+C:\Users\beauv\fs\tmp\WaypointClean\src\WaypointClean\obj\Debug\netstandard2.0\WaypointClean.AssemblyInfo.fs
+C:\Users\beauv\fs\tmp\WaypointClean\src\WaypointClean\obj\Debug\netstandard2.0\WaypointClean.dll
+C:\Users\beauv\fs\tmp\WaypointClean\src\WaypointClean\obj\Debug\netstandard2.0\WaypointClean.xml
+C:\Users\beauv\fs\tmp\WaypointClean\src\WaypointClean\obj\Debug\netstandard2.0\WaypointClean.pdb

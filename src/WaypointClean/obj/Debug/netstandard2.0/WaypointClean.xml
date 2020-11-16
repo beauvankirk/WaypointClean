@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+<assembly><name>WaypointClean</name></assembly>
+<members>
+<member name="P:WaypointClean.Say.SampleType.B">
+<summary>
+And more comments
+</summary>
+</member>
+<member name="P:WaypointClean.Say.SampleType.A">
+<summary>
+Some more comments
+</summary>
+</member>
+<member name="T:WaypointClean.Say.SampleType">
+<summary>
+Some comment on the type
+</summary>
+</member>
+<member name="M:WaypointClean.Say.hello(System.String)">
+<summary>
+Some comment on the function
+
+ ```
+ let sample = hello &quot;Chris&quot;
+ sample = &quot;Hello Chris&quot;
+ ```
+</summary>
+</member>
+<member name="T:WaypointClean.Say">
+<summary>
+Some comment on the module
+</summary>
+</member>
+</members>
+</doc>
